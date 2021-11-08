@@ -180,11 +180,17 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ball.cpp" />
+    <ClCompile Include="src\brick.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\paddle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ball.h" />
+    <ClInclude Include="src\brick.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\paddle.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
