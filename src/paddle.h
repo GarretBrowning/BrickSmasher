@@ -6,16 +6,15 @@ class Paddle
 public:
 	// Default values for the player paddle (currently all Magic Numbers):
 	float xPosition{512.0}; // Default canvas Width/2.
-	float yPosition{720.0}; // Default canvas Height - Height/16. 
+	const float yPosition{720.0}; // Default canvas Height - Height/16. 
 	float width{100.0};
 	float height{20.0};
+	bool isFullSize{true};
 	ofRectangle hitBox{xPosition, yPosition, width, height};
-	//ofRectangle hitBox;
 
-	// Constructor:
+	// Constructors:
 	Paddle() = default;
-	Paddle(float xPos, float yPos, float w, float h);
+	Paddle(float xPos, float yPos, float w, float h, bool isFS);
 
-	// Member functions:
-	void draw();
+	void draw() const;
 };

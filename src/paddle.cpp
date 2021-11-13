@@ -1,17 +1,15 @@
 #include "paddle.h"
 #include "ofGraphics.h"
 
-Paddle::Paddle(float xPos, float yPos, float w, float h)
-	: xPosition{xPos}, yPosition{yPos}, width{w}, height{h}
+Paddle::Paddle(const float xPos, const float yPos, const float w, const float h, const bool isFS)
+	: xPosition{xPos}, yPosition{yPos}, width{w}, height{h}, isFullSize{isFS}
 {
-	hitBox.setFromCenter(xPos, yPos, w, h);
+	hitBox.setFromCenter(xPosition, yPosition, width, height);
 }
 
-void Paddle::draw()
+void Paddle::draw() const
 {
-	ofSetColor(230, 50);
-	//ofSetRectMode(OF_RECTMODE_CENTER); // Need to be careful as this is where the rectmode is set!!
-	/*hitBox.setFromCenter(xPosition, yPosition, width, height);*/
+	ofSetColor(180);
 	ofFill();
-	ofDrawRectangle(hitBox);
+	ofDrawRectRounded(hitBox, 5);
 }

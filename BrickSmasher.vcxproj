@@ -182,6 +182,7 @@
   <ItemGroup>
     <ClCompile Include="src\ball.cpp" />
     <ClCompile Include="src\brick.cpp" />
+    <ClCompile Include="src\gameMode.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
     <ClCompile Include="src\paddle.cpp" />
@@ -189,6 +190,7 @@
   <ItemGroup>
     <ClInclude Include="src\ball.h" />
     <ClInclude Include="src\brick.h" />
+    <ClInclude Include="src\gameMode.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\paddle.h" />
   </ItemGroup>

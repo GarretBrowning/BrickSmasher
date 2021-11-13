@@ -10,6 +10,7 @@
     <ClCompile Include="src\paddle.cpp" />
     <ClCompile Include="src\brick.cpp" />
     <ClCompile Include="src\ball.cpp" />
+    <ClCompile Include="src\gameMode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -23,6 +24,7 @@
     <ClInclude Include="src\paddle.h" />
     <ClInclude Include="src\brick.h" />
     <ClInclude Include="src\ball.h" />
+    <ClInclude Include="src\gameMode.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />
